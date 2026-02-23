@@ -1,18 +1,18 @@
- /* ১. Google Fonts ইমপোর্ট */
+  
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
 
-/* ২. কালার ভেরিয়েবল (Purple Theme) */
+ 
 :root {
-  --primary: #8b5cf6;       /* ব্রাইট পার্পল */
-  --bg-deep: #2e1065;      /* সবচেয়ে ডার্ক পার্পল */
-  --bg-soft: #4c1d95;      /* মিডিয়াম পার্পল */
-  --card-bg: rgba(255, 255, 255, 0.98); /* সাদা কার্ড */
+  --primary: #8b5cf6;        
+  --bg-deep: #2e1065;       
+  --bg-soft: #4c1d95;      
+  --card-bg: rgba(255, 255, 255, 0.98);  
   --text-main: #1e293b;
   --text-muted: #64748b;
   --border: #e2e8f0;
 }
 
-/* ৩. গ্লোবাল রিসেট (ফুল স্ক্রিন করার জন্য সবচেয়ে জরুরি) */
+ 
 * { 
   margin: 0; 
   padding: 0; 
@@ -23,15 +23,15 @@
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background: linear-gradient(135deg, var(--bg-deep) 0%, var(--bg-soft) 100%);
-  background-attachment: fixed; /* ব্যাকগ্রাউন্ড এক জায়গায় স্থির থাকবে */
+  background-attachment: fixed;  
   color: var(--text-main);
   line-height: 1.6;
   min-height: 100vh;
   width: 100%;
-  overflow-x: hidden; /* ডানে-বামে বাড়তি গ্যাপ বন্ধ করবে */
+  overflow-x: hidden;  
 }
 
-/* ৪. অ্যাপ কন্টেইনার */
+ 
 .app-container {
   width: 90%;
   max-width: 1200px;
@@ -41,7 +41,7 @@ body {
   gap: 50px;
 }
 
-/* ৫. সেকশন কার্ড ডিজাইন */
+ 
 .section-card {
   background: var(--card-bg);
   border-radius: 35px;
@@ -55,7 +55,7 @@ body {
   transform: translateY(-5px);
 }
 
-/* ৬. হিরো সেকশন স্টাইল */
+ 
 .hero-container {
   display: flex;
   justify-content: space-between;
@@ -83,7 +83,7 @@ body {
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-/* ৭. বাটন ডিজাইন */
+ 
 .hero-btns {
   display: flex;
   gap: 15px;
@@ -118,7 +118,7 @@ body {
   color: white;
 }
 
-/* ৮. মিডিয়া কুয়েরি (মোবাইল রেসপন্সিভ) */
+ 
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column-reverse;
